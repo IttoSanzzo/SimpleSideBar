@@ -11,37 +11,59 @@
 		<div id="globalContainer">
 			<div class="sideBar">
 				<div id="sideBarButtonContainer">
-					<button>
+					<a id="logoImage" href="">
+						<img src="assets/logo.svg" alt="Vet Logo" />
+					</a>
+					<button id="sideBarButton" onclick="openSideBar()">
 						<img src="assets/menu.svg" alt="Side Bar Button" />
 					</button>
 				</div>
-				<button id="sideBarSearchButton">
-					<img src="assets/search.svg" alt="Side Bar Search Button" />
-				</button>
+				<div id="sideBarSearchContainer">
+					<button onclick="openSideBar()">
+						<img
+							src="assets/search.svg"
+							alt="Side Bar Search Button" />
+					</button>
+					<input id="searchBarInput" type="text" />
+				</div>
 				<div id="sideBarMiscs">
 					<button>
 						<img
 							src="assets/grid.svg"
 							alt="Side Bar Dashboard Button" />
+						<span>Dashboard</span>
 					</button>
 					<button>
 						<img src="assets/pet.svg" alt="Side Bar Pets Button" />
+						<span>Pets</span>
 					</button>
 					<button>
 						<img
 							src="assets/user.svg"
 							alt="Side Bar Clients button" />
+						<span>Clients</span>
 					</button>
 					<button>
 						<img src="assets/vet.svg" alt="Side Bar Vets Button" />
+						<span>Vets</span>
 					</button>
 					<button>
 						<img
 							src="assets/settings.svg"
 							alt="Side Bar Settings Button" />
+						<span>Ajustes</span>
 					</button>
 				</div>
 				<div id="sideBarLogout">
+					<div id="profileInfo">
+						<img
+							src="https://avatars.githubusercontent.com/u/106534001?v=4"
+							alt="User Profile Image" />
+						<div class="">
+							<span id="accountName">Itto Sanzzo</span>
+							<span id="accountOcupation">Software Engineer</span>
+						</div>
+					</div>
 					<button>
 						<img
 							src="assets/log-out.svg"
@@ -51,5 +73,6 @@
 			</div>
 			<div class="mainContainer"><h1>Dashboard</h1></div>
 		</div>
+		<script src="sidebar.js"></script>
 	</body>
 </html>
