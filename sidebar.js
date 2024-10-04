@@ -4,10 +4,8 @@ const sideBarMiscsSpans = document.querySelectorAll("#sideBarMiscs button span")
 const sideBarButton = document.getElementById("sideBarButton");
 const logoImage = document.getElementById("logoImage")
 const profileInfo = document.getElementById("profileInfo")
-console.log("logged");
 
 function openSideBar() {
-	console.log("opening");
 	root.style.setProperty("--sidebar-width", "250px");
 	root.style.setProperty("--searchbar-color", "#8ed7c6");
 	searchBar.style.setProperty("padding-left", "32px");
@@ -24,7 +22,6 @@ function openSideBar() {
 }
 
 function closeSideBar() {
-	console.log("closing");
 	root.style.setProperty("--sidebar-width", "74px");
 	root.style.setProperty("--searchbar-color", "#dde4e4");
 	searchBar.style.removeProperty("padding-left");
