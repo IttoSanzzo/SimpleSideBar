@@ -118,6 +118,7 @@ body {
 #profileInfo img {
 	width: 45px;
 	height: 45px;
+	margin-left: 14px;
 	border-radius: 12px;
 	display: inline;
 }
