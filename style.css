@@ -1,0 +1,79 @@
+/* Global */
+
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background-color: var(--bg-color);
+}
+* button {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+:root {
+	--sidebar-width: 74px;
+	--bg-color: #dde4e4;
+	--LightGreen: #8ed7c6;
+	--DefaultGreen: #18c29c;
+	--DarkGreen: #084236;
+}
+
+/* Global Container */
+
+#globalContainer {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+/* Side Bar */
+
+.sideBar {
+	position: fixed;
+	background-color: var(--DefaultGreen);
+	width: var(--sidebar-width);
+	height: 100%;
+}
+.sideBar img {
+	width: 24px;
+	height: 24px;
+}
+#sideBarButtonContainer {
+	margin: 18px 0 0;
+	display: flex;
+	justify-content: center;
+}
+#sideBarSearchButton {
+	background-color: var(--bg-color);
+	width: 50px;
+	height: 50px;
+	margin: 17px 10px 12px;
+	border-radius: 12px;
+}
+#sideBarMiscs button {
+	margin: 17px 15px;
+}
+#sideBarLogout {
+	position: absolute;
+	width: var(--sidebar-width);
+	height: 60px;
+	background-color: var(--LightGreen);
+	bottom: 0;
+}
+#sideBarLogout button {
+	display: block;
+	margin: 15px;
+}
+
+/* Main Container */
+
+.mainContainer {
+	margin-left: var(--sidebar-width);
+}
+.mainContainer h1 {
+	margin-top: 18px;
+	margin-left: 18px;
+	color: var(--DarkGreen);
+	font-size: 25px;
+}
